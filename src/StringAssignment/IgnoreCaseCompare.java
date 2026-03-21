@@ -1,0 +1,21 @@
+package StringAssignment;
+
+public class IgnoreCaseCompare {
+    public static void main(String[] args) {
+        String str =  "Abhi";
+        String str2 ="Abhishek";
+        int variable = str.compareToIgnoreCase(str2);
+        if(variable<0)
+        {
+            System.out.println("Strings "+str+" is less than "+str2);
+        }
+        else if (variable==0)
+        {
+            System.out.println("Strings "+str+" is equal to "+str2);
+        }
+        else {
+            System.out.println("Strings "+str+" is greater than "+str2);
+        }
+    }
+}
+
