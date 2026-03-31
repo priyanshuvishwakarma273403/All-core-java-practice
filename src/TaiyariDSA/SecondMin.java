@@ -15,7 +15,6 @@ public class SecondMin {
                 smin=arr[i];
             }
         }
-
         System.out.println(min);
         System.out.println(smin);
     }
