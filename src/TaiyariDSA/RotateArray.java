@@ -14,6 +14,7 @@ public class RotateArray {
            System.out.print(ele+" ");
        }
     }
+
     static void reverse(int[] arr, int i, int j){
         while(i<j){
             int temp = arr[i];
@@ -22,6 +23,5 @@ public class RotateArray {
             i++;
             j--;
         }
-
     }
 }
