@@ -1,5 +1,5 @@
 package TaiyariDSA.binarySearch;
-//
+
 //There is an integer array nums sorted in ascending order (with distinct values).
 //Prior to being passed to your function, nums is possibly left rotated at
 //an unknown index k (1 <= k < nums.length) such that the resulting array is [nums[k],
@@ -38,6 +38,5 @@ public class SearchInRotatedArray {
             }
         }
         System.out.println(-1);
-
     }
 }
