@@ -87,7 +87,5 @@ public class StringFormattingGuide {
         System.out.printf(" %-15s %5d %,10.2f%n", "Charlie Brown", 35, 95000.75);
 
 
-
-
     }
 }
