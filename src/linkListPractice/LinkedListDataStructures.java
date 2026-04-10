@@ -8,7 +8,7 @@ class Node{
     }
 }
 
-class LinkedList{
+class Linkedlist{
     Node head;
     Node tail;
     int size;
@@ -45,14 +45,28 @@ class LinkedList{
         return temp.val;
     }
 
-     void addAtTail(int val) {
-        if(tail == null){
-            addAtTail(val);
+    void deleteAtHead(int val){
+
+        if(head == null){
+            System.out.println("List is empty");
             return;
         }
+        head = head.next;
+        if(head == null){
+            tail = null;
+        }
+        size--;
+    }
+
+    void addAtTail(int val) {
         Node temp = new Node(val);
-        tail.next = temp;
-        tail = temp;
+
+        if(tail == null){
+            head = tail = temp;
+        } else {
+            tail.next = temp;
+            tail = temp;
+        }
         size++;
     }
 
@@ -66,16 +80,21 @@ class LinkedList{
         }
         size++;
     }
+
+
 }
 
 public class LinkedListDataStructures {
     public static void main(String[] args) {
-        LinkedList l1 = new LinkedList();
+        Linkedlist l1 = new Linkedlist();
         l1.addAtTail(10);
         l1.addAtTail(20);
         l1.addAtTail(30);
         l1.addAtTail(40); l1.display();
         l1.addAtHead(50);
         l1.addAtHead(60); l1.display();
+        System.out.println(l1.size);
+        l1.deleteAtHead(2); l1.display();
+
     }
 }
