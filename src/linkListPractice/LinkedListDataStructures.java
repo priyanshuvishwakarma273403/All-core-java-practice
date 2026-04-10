@@ -98,6 +98,22 @@ class Linkedlist{
         if(idx == size - 1) tail = temp;
         size--;
     }
+
+    void insert(int val, int idx) {
+        if (idx < 0 || idx > size) System.out.println("Index out of bounds");
+        else if (idx == 0) addAtHead(val);
+        else if (idx == size) addAtTail(val);
+        else {
+            Node temp = head;
+            for (int i = 0; i < idx - 1; i++) {
+                temp = temp.next;
+            }
+            Node t = new Node(val);
+            t.next = temp.next;
+            temp.next = t;
+            size++;
+        }
+    }
 }
 
 public class LinkedListDataStructures {
@@ -114,9 +130,7 @@ public class LinkedListDataStructures {
         System.out.println(l1.size);
 
         l1.delete(3); l1.display();
-//        l1.insert(45,2); l1.display();
+        l1.insert(45,2); l1.display();
         System.out.println(l1.get(3));
-
-
     }
 }
