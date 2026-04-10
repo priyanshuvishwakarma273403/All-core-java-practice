@@ -1,13 +1,5 @@
 package linkListPractice;
 
-class Node{
-    int val;
-    Node next;
-    Node(int val){
-        this.val = val;
-    }
-}
-
 public class NodePractice {
     public static void main(String[] args) {
 
@@ -25,7 +17,6 @@ public class NodePractice {
         System.out.println(c.val);
         System.out.println(b.next.val);
         System.out.println(a.next.next.val);
-
 
     }
 }
