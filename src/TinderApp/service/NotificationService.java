@@ -38,5 +38,4 @@ public class NotificationService {
             pair.getValue().update(message);
         }
     }
-
 }
