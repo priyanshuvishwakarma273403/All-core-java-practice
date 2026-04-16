@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class User {
+
     private String id;
     private UserProfile profile;
     private Preferences preferences;
