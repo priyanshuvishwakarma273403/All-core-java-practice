@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BasicLocationStrategy implements LocationStrategy {
-
     public List<User> findNearbyUsers(Location location, double maxDistance, List<User> allUsers) {
         List<User> nearbyUsers = new ArrayList<>();
         for (User user : allUsers) {
