@@ -9,7 +9,6 @@ public class ChatRoom {
     private List<String> participantIds;
     private List<Message> messages;
 
-
     public ChatRoom(String roomId, String user1Id, String user2Id){
         id = roomId;
         participantIds = new ArrayList<>();
@@ -46,5 +45,4 @@ public class ChatRoom {
         }
         System.out.println("=========================");
     }
-
 }
