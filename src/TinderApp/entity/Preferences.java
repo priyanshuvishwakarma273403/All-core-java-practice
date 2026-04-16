@@ -76,7 +76,4 @@ public class Preferences {
     public double getMaxDistance() {
         return maxDistance;
     }
-
-
-
 }
