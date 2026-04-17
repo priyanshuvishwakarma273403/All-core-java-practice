@@ -93,7 +93,7 @@ public class DatingApp{
             ChatRoom chatRoom = new ChatRoom(chatRoomId, userId, targetUserId);
             chatRooms.add(chatRoom);
 
-            // Notify both users
+
             NotificationService.getInstance().notifyUser(userId, "You have a new match with " + targetUser.getProfile().getName() + "!");
             NotificationService.getInstance().notifyUser(targetUserId, "You have a new match with " + user.getProfile().getName() + "!");
             return true;
