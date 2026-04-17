@@ -40,4 +40,41 @@ public class DatingApp{
         return user;
     }
 
+    public User getUserById(String userId){
+        for(User user : users){
+            if(user.getId().equals(userId)){
+                return user;
+            }
+        }
+        return null;
+    }
+
+
+    public List<User> findNearbyUsers(String userId, double maxDistance){
+        User user = getUserById(userId);
+        if(user == null){
+            return new ArrayList<>();
+        }
+
+        List<User> nearbyUsers = LocationService.getInstance().findNearbyUsers(
+                user.getProfile().getLocation(), maxDistance, users
+        );
+
+
+        nearbyUsers.remove(user);
+
+        List<User> filteredUsers = new ArrayList<>();
+
+        for(User otherUser : nearbyUsers){
+            if(!user.hasInteractedWith(otherUser.getId())){
+                    double score = matcher.calculateMatchScore(user, otherUser);
+
+                    if(score > 0){
+                        filteredUsers.add(otherUser);
+                }
+            }
+        }
+        return filteredUsers;
+    }
+
 }
