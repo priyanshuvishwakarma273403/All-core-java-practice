@@ -120,7 +120,7 @@ public class UserProfile {
             System.out.print(i.getName() + " (" + i.getCategory() + "), ");
         }
         System.out.println();
-        System.out.println("Location: " + location.getLatitude() + ", " + location.getLongitude());
+//        System.out.println("Location: " + location.getLatitude() + ", " + location.getLongitude());
         System.out.println("===================");
     }
 }
