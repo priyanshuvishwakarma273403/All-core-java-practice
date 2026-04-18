@@ -94,8 +94,8 @@ public class DatingApp{
             chatRooms.add(chatRoom);
 
 
-            NotificationService.getInstance().notifyUser(userId, "You have a new match with " + targetUser.getProfile().getName() + "!");
-            NotificationService.getInstance().notifyUser(targetUserId, "You have a new match with " + user.getProfile().getName() + "!");
+//            NotificationService.getInstance().notifyUser(userId, "You have a new match with " + targetUser.getProfile().getName() + "!");
+//            NotificationService.getInstance().notifyUser(targetUserId, "You have a new match with " + user.getProfile().getName() + "!");
             return true;
         }
         return false;
@@ -119,7 +119,7 @@ public class DatingApp{
 
         // Notify the receiver
         chatRoom.addMessage(senderId, content);
-        NotificationService.getInstance().notifyUser(receiverId, "New message from " + getUserById(senderId).getProfile().getName());
+//        NotificationService.getInstance().notifyUser(receiverId, "New message from " + getUserById(senderId).getProfile().getName());
     }
 
     public void displayUser(String userId) {

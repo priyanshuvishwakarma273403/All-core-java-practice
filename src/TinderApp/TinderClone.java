@@ -56,13 +56,13 @@ public class TinderClone {
         pref2.addInterest("Movies");
 
         Location location1 = new Location();
-        location1.setLatitude(1.01);
+//        location1.setLatitude(1.01);
         location1.setLongitude(1.02);
         profile1.setLocation(location1);
 
         // Set location for user2 (Close to user1, within 5km)
         Location location2 = new Location();
-        location2.setLatitude(1.03);
+//        location2.setLatitude(1.03);
         location2.setLongitude(1.04);
         profile2.setLocation(location2);
 
@@ -82,11 +82,11 @@ public class TinderClone {
         // User1 swipes right on User2
         System.out.println("\n---- Swipe Actions ----");
         System.out.println("User1 swipes right on User2");
-        app.swipe("user1", "user2", SwipeAction.RIGHT);
-
-        // User2 swipes right on User1 (creating a match)
-        System.out.println("User2 swipes right on User1");
-        app.swipe("user2", "user1", SwipeAction.RIGHT);
+//        app.swipe("user1", "user2", SwipeAction.RIGHT);
+//
+//        // User2 swipes right on User1 (creating a match)
+//        System.out.println("User2 swipes right on User1");
+//        app.swipe("user2", "user1", SwipeAction.RIGHT);
 
         // Send messages in the chat room
         System.out.println("\n---- Chat Room ----");
