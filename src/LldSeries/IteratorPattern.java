@@ -9,7 +9,21 @@ interface Iterable<T>{
     Iterator<T> getIterator();
 }
 
+class LinkedList implements Iterable<Integer>{
 
+    public int data;
+    public LinkedList next;
+
+    public LinkedList(int value){
+        data = value;
+        next = null;
+    }
+
+    @Override
+    public Iterator<Integer> getIterator() {
+        return new LinkedListIterator(this);
+    }
+}
 
 
 
