@@ -2,8 +2,14 @@ package LldSeries;
 
 interface Iterator<T>{
     boolean hasNext();
-
+    T next();
 }
+
+interface Iterable<T>{
+    Iterator<T> getIterator();
+}
+
+
 
 
 
