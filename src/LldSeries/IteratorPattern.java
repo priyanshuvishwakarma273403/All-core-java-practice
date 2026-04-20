@@ -43,6 +43,18 @@ class BinaryTree implements Iterable<Integer>{
     }
 }
 
+class Song{
+    public String title;
+    public String artist;
+
+    public Song(String t, String a){
+        title = t;
+        artist = a;
+    }
+}
+
+
+
 
 public class IteratorPattern {
     public static void main(String[] args) {
