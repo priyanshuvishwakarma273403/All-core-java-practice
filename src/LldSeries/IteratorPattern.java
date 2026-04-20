@@ -177,8 +177,8 @@ public class IteratorPattern {
 
         // Playlist
         Playlist playlist = new Playlist();
-        playlist.addSong(new Song("Admirin You", "Karan Aujla"));
-        playlist.addSong(new Song("Husn", "Anuv Jain"));
+        playlist.addSong(new Song("Raja ji ke dilwa", "Bahiya me kasi k saiyaan"));
+        playlist.addSong(new Song("Pahin k chale bikni", "Therma metre"));
 
         Iterator<Song> iterator3 = playlist.getIterator();
 
