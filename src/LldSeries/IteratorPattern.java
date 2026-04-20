@@ -123,6 +123,25 @@ class BinaryTreeInorderIterator implements Iterator<Integer>{
     }
 }
 
+class PlaylistIterator implements Iterator<Song>{
+
+    private List<Song> vec;
+    private int index = 0;
+
+    public PlaylistIterator(List<Song> v) {
+        vec = v;
+    }
+
+    @Override
+    public boolean hasNext() {
+        return index < vec.size();
+    }
+
+    @Override
+    public Song next() {
+        return vec.get(index++);
+    }
+}
 
 
 public class IteratorPattern {
