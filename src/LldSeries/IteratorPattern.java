@@ -1,5 +1,8 @@
 package LldSeries;
 
+import java.util.ArrayList;
+import java.util.List;
+
 interface Iterator<T>{
     boolean hasNext();
     T next();
@@ -53,6 +56,39 @@ class Song{
     }
 }
 
+class Playlist implements Iterable<Song>{
+
+    public List<Song> songs = new ArrayList<>();
+
+    public void addSong(Song s){
+        songs.add(s);
+    }
+
+    @Override
+    public Iterator<Song> getIterator() {
+        return new PlaylistIterator(songs);
+    }
+}
+
+class LinkedListIterator implements Iterator<Integer>{
+
+    private LinkedList current;
+    public LinkedListIterator(LinkedList head){
+        current = head;
+    }
+
+    @Override
+    public boolean hasNext() {
+        return current != null;
+    }
+
+    @Override
+    public Integer next() {
+        int val = current.data;
+        current = current.next;
+        return val;
+    }
+}
 
 
 
