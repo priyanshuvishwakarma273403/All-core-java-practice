@@ -1,4 +1,4 @@
-package TaiyariDSA;
+package TaiyariDSA.array;
 
 public class ReverseArray {
     public static void main(String[] args) {

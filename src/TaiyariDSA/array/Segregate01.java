@@ -1,4 +1,4 @@
-package TaiyariDSA;
+package TaiyariDSA.array;
 
 public class Segregate01 {
     public static void main(String[] args) {

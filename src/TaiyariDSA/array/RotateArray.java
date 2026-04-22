@@ -1,4 +1,4 @@
-package TaiyariDSA;
+package TaiyariDSA.array;
 
 // Output: [3, 4, 5, 1, 2]
 public class RotateArray {
