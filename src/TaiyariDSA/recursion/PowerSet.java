@@ -7,7 +7,7 @@ import java.util.List;
 public class PowerSet {
     public static void main(String[] args) {
         String s = "abc";
-       allPossibleStrings(s);
+        System.out.println(allPossibleStrings(s));
     }
 
     private static List<String> allPossibleStrings(String s) {
@@ -22,7 +22,8 @@ public class PowerSet {
             if(ans.length() != 0) list.add(ans);
             return;
         }
-        char c = s.charAt(idx);
-
+        char ch = s.charAt(idx);
+        subset(ans+ch, s, idx+1, list);
+        subset(ans,s,idx+1,list); // skip
     }
 }
