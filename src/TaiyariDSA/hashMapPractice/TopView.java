@@ -10,6 +10,7 @@ class Node{
         this.data = data;
     }
 }
+
 class Pair{
     Node node;
     int dist;
@@ -31,10 +32,8 @@ public class TopView {
         System.out.println(topView(root));
     }
 
-
     public static List<Integer> topView(Node root) {
         List<Integer> ans = new ArrayList<>();
-
         if (root == null) return ans;
 
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -69,7 +68,6 @@ public class TopView {
         for (int i = min; i <= max; i++) {
             ans.add(map.get(i));
         }
-
         return ans;
 
     }
