@@ -47,5 +47,4 @@ public class TraversalInQueue {
     private static int remove(Queue<Integer> q, int idx){
         return -1;
     }
-
 }
