@@ -8,7 +8,6 @@ package TaiyariDSA.QueuesPractice;
 //Window [3, -6] First negative integer is -6.
 //Window [-6, 10] First negative integer is -6.
 
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -30,7 +29,6 @@ public class FirstNegativeNumberInEveryWindow {
         }
         for(int i = 0; i< n-k+1; i++){
 
-            // window is from i to i+k-1
             while(q.size()>0 && q.peek()<i) q.remove();
             if(q.size()>0 && q.peek()<=i+k-1) ans.add(arr[q.peek()]);
             else ans.add(0);
