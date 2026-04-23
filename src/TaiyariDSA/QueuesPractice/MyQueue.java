@@ -14,7 +14,7 @@ public class MyQueue {
     int size;
     int peek(){
         if(size == 0){
-            System.out.println("Queue is empty");
+            System.out.print("Queue is empty");
             return -1;
         }
         return head.val;
@@ -22,7 +22,7 @@ public class MyQueue {
 
     int remove(){
         if(size == 0){
-            System.out.println("Queue is empty");
+            System.out.print("Queue is empty");
             return -1;
         }
 
@@ -45,7 +45,7 @@ public class MyQueue {
     void display(){
         Node temp = head;
         while(temp != null){
-            System.out.println(temp.val+" ");
+            System.out.print(temp.val+" ");
             temp = temp.next;
         }
         System.out.println();
