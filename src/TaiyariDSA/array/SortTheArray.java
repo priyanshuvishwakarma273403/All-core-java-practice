@@ -32,3 +32,6 @@ public class SortTheArray {
         }
     }
 }
+
+//     time complexity O(n)
+//    space O(1)
