@@ -7,6 +7,9 @@ public class PeakElement1 {
         System.out.println(findPeak(nums));
     }
 
+//    time complexity O(log n)
+//        space O(1)
+
     private static int findPeak(int[] nums) {
         int low = 0;
         int high = nums.length - 1;
