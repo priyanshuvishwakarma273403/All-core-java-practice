@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//   time complexity O(nLog n)
+//     space O(1)
+
 public class TripletSum {
     public static void main(String[] args) {
         int [] nums = {-1,0,1,2,-1,-4};
