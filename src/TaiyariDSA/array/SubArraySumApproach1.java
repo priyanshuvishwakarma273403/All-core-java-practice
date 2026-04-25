@@ -6,7 +6,7 @@ public class SubArraySumApproach1 {
     public static void main(String[] args) {
         int [] arr = {1,1,1};
         int k = 2;
-        subarraySum(arr,k);
+        System.out.println( subarraySum(arr,k));
     }
 
     private static int subarraySum(int[] arr, int k) {
