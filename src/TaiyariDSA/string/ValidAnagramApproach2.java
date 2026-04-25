@@ -1,4 +1,6 @@
 package TaiyariDSA.string;
+// time complexity O(n)
+// space complexity O(n)
 
 public class ValidAnagramApproach2 {
     public static void main(String[] args) {
