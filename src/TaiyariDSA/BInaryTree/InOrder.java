@@ -15,7 +15,6 @@ public class InOrder {
         for(int ele : result){
             System.out.print(ele + " ");
         }
-
     }
 
     private static ArrayList<Integer> inOrder(Node root) {
