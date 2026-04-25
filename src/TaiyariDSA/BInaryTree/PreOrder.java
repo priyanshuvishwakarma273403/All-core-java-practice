@@ -42,5 +42,4 @@ public class PreOrder {
         }
         return ans;
     }
-
 }
