@@ -25,6 +25,32 @@ public class User implements Observer {
         System.out.println("[NOTIFICATION to " + name + "]: " + message);
     }
 
+    public void updateBalances(String otherUserId, double amount) {
+        balances.put(otherUserId, balances.getOrDefault(otherUserId, 0.0) + amount);
 
+        // Remove if balance becomes zero
+        if (Math.abs(balances.get(otherUserId)) < 0.01) {
+            balances.remove(otherUserId);
+        }
+    }
 
+    public double getTotalOwed() {
+        double total = 0;
+        for (Map.Entry<String, Double> balance : balances.entrySet()) {
+            if (balance.getValue() < 0) {
+                total += Math.abs(balance.getValue());
+            }
+        }
+        return total;
+    }
+
+    public double getTotalOwing() {
+        double total = 0;
+        for (Map.Entry<String, Double> balance : balances.entrySet()) {
+            if (balance.getValue() > 0) {
+                total += balance.getValue();
+            }
+        }
+        return total;
+    }
 }
