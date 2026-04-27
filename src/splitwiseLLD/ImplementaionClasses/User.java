@@ -53,4 +53,8 @@ public class User implements Observer {
         }
         return total;
     }
+
+    public void updateBalance(String toUserId, double amount) {
+
+    }
 }

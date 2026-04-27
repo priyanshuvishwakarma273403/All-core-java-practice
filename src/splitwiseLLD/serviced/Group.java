@@ -228,12 +228,12 @@ public class Group {
         }
     }
 
-    public void simplifyGroupDebts() {
-        Map<String, Map<String, Double>> simplifiedBalances = DebtSimplifier.simplifyDebts(groupBalances);
-        groupBalances = simplifiedBalances;
-
-        System.out.println("\nDebts have been simplified for group: " + name);
-    }
+//    public void simplifyGroupDebts() {
+//        Map<String, Map<String, Double>> simplifiedBalances = DebtSimplifier.simplifyDebts(groupBalances);
+//        groupBalances = simplifiedBalances;
+//
+//        System.out.println("\nDebts have been simplified for group: " + name);
+//    }
 
 
 }

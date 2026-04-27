@@ -190,7 +190,7 @@ public class Splitwise {
         if (group == null) return;
 
         // Use group's balance data for debt simplification
-        group.simplifyGroupDebts();
+//        group.simplifyGroupDebts();
     }
 
 }
