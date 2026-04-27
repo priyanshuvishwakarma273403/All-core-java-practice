@@ -1,4 +1,18 @@
-# 🚀 Core Java Practice Repository
+<p align="center">
+  <img src="eagle.png" width="100%" alt="Majestic Eagle">
+</p>
+
+<h1 align="center">🦅 Majestic Core Java Practice Repository</h1>
+
+<p align="center">
+  <i>"Soaring through the depths of Java Fundamentals to reach the peaks of Backend Excellence."</i>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-Expertise-orange?style=for-the-badge&logo=java" alt="Java Badge">
+  <img src="https://img.shields.io/badge/Status-Learning-green?style=for-the-badge" alt="Status Badge">
+</p>
+
 
 ## 📌 Overview
 
@@ -63,7 +77,7 @@ Rather than focusing only on theory, this repo emphasizes a **code-first learnin
 ## 🛠️ Tech Stack & Tools
 
 * **Language:** Java
-* **IDE:** IntelliJ IDEA / Eclipse
+* **IDE:** IntelliJ IDEA
 * **Version Control:** Git & GitHub
 
 ---
