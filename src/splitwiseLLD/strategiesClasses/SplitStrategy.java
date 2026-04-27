@@ -1,0 +1,10 @@
+package splitwiseLLD.strategiesClasses;
+
+
+import splitwiseLLD.model.Split;
+
+import java.util.List;
+
+public interface SplitStrategy {
+    List<Split> calculateSplit(double totalAmount, List<String> userIds, List<Double> values);
+}
