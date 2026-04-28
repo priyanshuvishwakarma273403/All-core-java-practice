@@ -1,13 +1,18 @@
 package TaiyariDSA.binarySearch;
 
-//class Node{
-//    int val;
-//    Node left;
-//    Node right;
-//    public Node(int val){
-//        this.val = val;
-//    }
-//}
+class Node{
+    int val;
+    Node left;
+    Node right;
+    public Node(int val){
+        this.val = val;
+    }
+
+    @Override
+    public String toString(){
+        return String.valueOf(val);
+    }
+}
 
 public class dfs_level {
     public static void main(String[] args) {
@@ -61,7 +66,7 @@ public class dfs_level {
         preOrder(root.right);
     }
 
-    private static void inOrder(Node root){
+    static void inOrder(Node root){
         if(root == null) return;
         inOrder(root.left);
         System.out.print(root.val+" ");
