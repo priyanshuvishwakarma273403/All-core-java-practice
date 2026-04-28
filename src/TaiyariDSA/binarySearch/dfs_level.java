@@ -31,6 +31,23 @@ public class dfs_level {
     }
 
     private static void preOrder(Node root){
+        if(root == null) return;
+        System.out.println(root.val+" ");
+        preOrder(root.left);
+        preOrder(root.right);
+    }
 
+    private static void inOrder(Node root){
+        if(root == null) return;
+        inOrder(root.left);
+        System.out.println(root.val+" ");
+        inOrder(root.right);
+    }
+
+    private static void postOrder(Node root){
+        if(root == null) return;
+        postOrder(root.left);
+        postOrder(root.right);
+        System.out.println(root.val+" ");
     }
 }
