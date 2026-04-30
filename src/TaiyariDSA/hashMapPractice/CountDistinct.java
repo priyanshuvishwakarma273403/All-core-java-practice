@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class CountDistinct {
     public static void main(String[] args) {
-        int [] arr = {2, 2};
+        int [] arr = {2,2,2,3,3};
         HashSet<Integer> set = new HashSet<>();
         for(int ele : arr){
             set.add(ele);
