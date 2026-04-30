@@ -15,7 +15,6 @@ public class KthLargestUsingQueue {
         PriorityQueue<Integer> heap = new  PriorityQueue<>((n1,n2) -> n1 - n2);
         for(int n : arr){
             heap.add(n);
-
             if(heap.size() > k){
                 heap.poll();
             }
