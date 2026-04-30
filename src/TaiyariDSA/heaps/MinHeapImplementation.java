@@ -33,6 +33,38 @@ class Heap{
         }
     }
 
+    int remove(){
+        if(idx == 1){
+            System.out.println("Heap is Empty");
+            return -1;
+        }
+        int min = arr[1];
+        arr[1] = arr[idx-1];
+        idx--;
+        int root = 1;
+        while(root <= size()){
+            int left = 2*root, right = 2*root+1;
+            int leftVal = (left<=size()) ? arr[left] : Integer.MAX_VALUE;
+            int rightVal = (right<=size()) ? arr[right] : Integer.MAX_VALUE;
+            if(arr[root]<leftVal && arr[root]<rightVal) break;
+            else{
+                if(leftVal<rightVal){ // left child se swap karna hai
+                    int temp = arr[root];
+                    arr[root] = arr[left];
+                    arr[left] = temp;
+                    root = left;
+                }
+                else{ // right child se swap karna hai
+                    int temp = arr[root];
+                    arr[root] = arr[right];
+                    arr[right] = temp;
+                    root = right;
+                }
+            }
+        }
+        return min;
+    }
+
     void display(){
         for(int i = 0; i<idx; i++){
             System.out.print(arr[i]+" ");
