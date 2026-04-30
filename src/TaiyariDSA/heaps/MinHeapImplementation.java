@@ -87,6 +87,12 @@ public class MinHeapImplementation {
         Heap h = new Heap(10);
         h.add(10); h.add(15); h.add(8); h.add(9); h.add(4);
         h.display();
+        System.out.println(h.remove());
+        h.display();
+        h.add(2);
+        h.display();
+        System.out.println(h.remove());
+        h.display();
 
     }
 }
