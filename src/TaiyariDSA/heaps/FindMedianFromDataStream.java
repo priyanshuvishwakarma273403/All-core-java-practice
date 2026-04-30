@@ -35,6 +35,5 @@ public class FindMedianFromDataStream {
         obj.addNum(2);
         double median = obj.findMedian();
         System.out.println(median);
-
     }
 }
