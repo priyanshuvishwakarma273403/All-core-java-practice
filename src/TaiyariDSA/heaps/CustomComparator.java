@@ -32,6 +32,5 @@ public class CustomComparator {
         for(Student s: arr){
             System.out.println(s.name+" "+s.rno+" "+s.cgpa);
         }
-
     }
 }
