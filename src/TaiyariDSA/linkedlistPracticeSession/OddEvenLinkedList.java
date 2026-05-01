@@ -1,5 +1,6 @@
 package TaiyariDSA.linkedlistPracticeSession;
 
+
 public class OddEvenLinkedList {
     public static void main(String[] args) {
         Node head = new Node(1);
