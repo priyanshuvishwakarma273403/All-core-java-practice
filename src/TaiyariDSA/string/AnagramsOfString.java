@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class AnagramsOfString {
     public static void main(String[] args) {
-        String s1 = "Shiva";
-        String s2 = "Rohit";
+        String s1 = "shiva";
+        String s2 = "hisva";
         if(s1.length()!=s2.length()){
             return;
         }

@@ -1,7 +1,6 @@
 package TaiyariDSA.heaps;
 
 import java.util.ArrayList;
-import java.util.PriorityQueue;
 
 class Node{
     int data;
@@ -50,6 +49,5 @@ public class BSTToMaxHeap {
         in.add(root.data);
         inorder(root.right,in);
     }
-
 
 }
