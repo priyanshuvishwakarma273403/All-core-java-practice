@@ -14,7 +14,6 @@ public class ReverseLL {
             System.out.print(head.data+" ");
             head = head.next;
         }
-
     }
 
    public static Node reverseList(Node head) {
@@ -28,6 +27,5 @@ public class ReverseLL {
             curr = fwd;
         }
         return prev;
-
     }
 }
