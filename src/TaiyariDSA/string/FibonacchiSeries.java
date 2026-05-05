@@ -2,7 +2,7 @@ package TaiyariDSA.string;
 
 public class FibonacchiSeries {
     public static void main(String[] args) {
-        int n = 6;
+        int n = 3;
         System.out.println(fibonacci(n));
     }
 
