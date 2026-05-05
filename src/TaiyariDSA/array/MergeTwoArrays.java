@@ -1,7 +1,5 @@
 package TaiyariDSA.array;
 
-import java.util.Arrays;
-
 public class MergeTwoArrays {
     public static void main(String[] args) {
         int [] arr1 = {1,3,5};
