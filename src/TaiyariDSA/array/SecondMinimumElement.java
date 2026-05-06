@@ -10,5 +10,13 @@ public class SecondMinimumElement {
             }
         }
         System.out.println(min);
+
+        int smin = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if(arr[i] < smin &&  arr[i]!=min){
+                smin = arr[i];
+            }
+        }
+        System.out.println(smin);
     }
 }
