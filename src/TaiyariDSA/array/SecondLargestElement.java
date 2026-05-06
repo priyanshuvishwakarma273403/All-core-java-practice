@@ -20,9 +20,6 @@ public class SecondLargestElement {
         System.out.println(smax);
 
 
-
-
-
 //        int first = Integer.MIN_VALUE;
 //        int second = Integer.MIN_VALUE;
 //
