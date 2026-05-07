@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Practice {
@@ -18,6 +19,5 @@ public class Practice {
          }
          System.out.println();
      }
-
     }
 }
