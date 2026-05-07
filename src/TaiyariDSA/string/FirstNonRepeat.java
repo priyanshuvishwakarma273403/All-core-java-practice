@@ -11,7 +11,6 @@ public class FirstNonRepeat {
             charCount.put(ch, charCount.getOrDefault(ch, 0) + 1);
         }
 
-
         for(Map.Entry<Character, Integer> entry : charCount.entrySet()){
             if(entry.getValue() == 1){
                 System.out.println(entry.getKey());
