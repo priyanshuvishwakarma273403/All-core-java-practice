@@ -19,3 +19,8 @@ public class LCMofTwoNum {
         System.out.println(lcm);
     }
 }
+
+//  1. Input lo
+//2. GCD nikalo using Euclidean algorithm
+//3. LCM = (a*b)/gcd
+//4. print
