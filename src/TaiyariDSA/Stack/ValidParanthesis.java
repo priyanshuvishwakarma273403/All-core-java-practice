@@ -6,7 +6,7 @@ public class ValidParanthesis {
 
     public static boolean isValid(String str){
         Stack<Character> stack = new Stack<>();
-        for(char ch : str.toCharArray()){
+        for(char ch : str.toCharArray()){ // covert karega string to char array
             if(ch == '(' || ch == '[' || ch == '{' ){
                 stack.push(ch);
 
