@@ -11,7 +11,7 @@ public class StrongNumber {
     }
 
     public static void main(String[] args) {
-        int n = 15;
+        int n = 145;
         int temp = n, sum = 0;
         while(n!=0){
             int digit = n % 10;
