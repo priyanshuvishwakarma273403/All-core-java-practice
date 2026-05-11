@@ -5,8 +5,8 @@ import java.util.HashSet;
 
 public class TwoSumUsingMap {
     public static void main(String[] args) {
-        int [] arr = {2,3,4,5,6};
-        int target  = 5;
+        int [] arr = {2,0,4,5,6};
+        int target  = 7;
         System.out.println(Arrays.toString(twoSum(arr, target)));
     }
 
