@@ -10,6 +10,7 @@ public class TwoSumUsingMap {
         System.out.println(Arrays.toString(twoSum(arr, target)));
     }
 
+    // agar value return krna hoto hashset se kr skte hain
     private static int[] twoSum(int[] arr, int target) {
         HashSet<Integer> set = new HashSet<>();
         for(int ele : arr){
@@ -20,6 +21,7 @@ public class TwoSumUsingMap {
         return new int[]{-1,-1}; //agar target naa mila tab
 
 
+        //agar indices return krna hoto hashMAp
 //        HashMap<Integer, Integer> map = new HashMap<>();
 //        for(int i = 0; i< arr.length; i++){
 //            int complement = target - arr[i];
