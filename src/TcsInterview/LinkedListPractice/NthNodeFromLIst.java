@@ -3,6 +3,7 @@ package TcsInterview.LinkedListPractice;
 public class NthNodeFromLIst {
 
      public static int getKthFromLast(Node head, int k){
+
         Node slow = head;
         Node fast = head;
 
