@@ -39,6 +39,6 @@ public class NthNodeFromLIst {
         int kthNode = getKthFromLast(head, k);
         System.out.println(kthNode);
 
-
+        printLinkedList(head);
     }
 }
