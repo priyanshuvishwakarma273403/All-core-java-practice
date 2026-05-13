@@ -3,7 +3,6 @@ package TaiyariDSA.array;
 public class CheckIfArrayIsSorted {
     public static void main(String[] args) {
         int [] arr = {90, 80, 100, 70, 40, 30};
-
         System.out.println(isSorted(arr));
     }
 
