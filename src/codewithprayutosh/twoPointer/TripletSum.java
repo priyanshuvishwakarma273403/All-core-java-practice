@@ -1,20 +1,50 @@
 package codewithprayutosh.twoPointer;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class TripletSum {
-    public static void main(String[] args) {
-        int [] arr = {-1,0,1,2,-1,-4};
-        int tar = 0;
-        for(int i = 0; i < arr.length; i++){
-            for(int j = i+1; j < arr.length; j++){
-                for(int k = j+1; k < arr.length; k++ ){
-                    if(arr[i]+arr[j]+arr[k]==tar){
-                        System.out.println(arr[i]+arr[j]+arr[k]);
-                        return;
-                    }
+
+    public static List<List<Integer>> threeSum(int[] arr) {
+        List<List<Integer>> list = new ArrayList<>();
+        Arrays.sort(arr);
+        for(int i = 0; i< arr.length-2; i++) {
+            if (i > 0 && arr[i] == arr[i - 1]) continue;
+            int left = i + 1;
+            int right = arr.length - 1;
+
+            while (left < right) {
+                int sum = arr[i] + arr[left] + arr[right];
+                if (sum == 0) {
+                    list.add(Arrays.asList(arr[i], arr[left], arr[right]));
+                    left++;
+                    right--;
                 }
-                System.out.println();
+                while (left < right && arr[left] == arr[left - 1]) left++;
+                while (left < right && arr[right] == arr[right + 1]) right--;
+                if(sum < 0) left++;
+                else right--;
             }
         }
-        System.out.println("Not found");
+        return list;
+    }
+
+    public static void main(String[] args) {
+        int [] arr = {-1,0,1,2,-1,-4};
+        System.out.println(Arrays.toString(new List[]{threeSum(arr)}));
+
+//        for(int i = 0; i < arr.length; i++){
+//            for(int j = i+1; j < arr.length; j++){
+//                for(int k = j+1; k < arr.length; k++ ){
+//                    if(arr[i]+arr[j]+arr[k]==tar){
+//                        System.out.println(arr[i] + " " + arr[j] + " " + arr[k]);
+//                        return;
+//                    }
+//                }
+//                System.out.println();
+//            }
+//        }
+//        System.out.println("Not found");
     }
 }
