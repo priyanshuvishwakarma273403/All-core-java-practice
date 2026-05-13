@@ -5,8 +5,6 @@ import java.util.Arrays;
 public class DuplicateArray {
 
     public static int findDuplicate(int[] arr) {
-
-
         Arrays.sort(arr);
         int i = 0;
         int j = 1;
