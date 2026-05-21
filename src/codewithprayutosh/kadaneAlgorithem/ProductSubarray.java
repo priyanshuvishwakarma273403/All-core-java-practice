@@ -27,7 +27,8 @@ public class ProductSubarray {
 
     public static void main(String[] args) {
         int[] arr = {2,3,-2,4};
-        maxSubArray(arr);
+        int result = maxSubArray(arr);
+        System.out.println(result);
     }
 
 }
