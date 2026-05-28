@@ -3,7 +3,7 @@ package codewithprayutosh.stack;
 import java.util.ArrayList;
 import java.util.Stack;
 
-public class PrevGreaterElement {
+public class PrevSmallestElement {
 
     public static ArrayList<Integer> smallestElement(int[] arr) {
 
@@ -23,7 +23,6 @@ public class PrevGreaterElement {
         }
         return ans;
     }
-
 
     public static void main(String[] args) {
         int[] arr = {1, 6, 2};
