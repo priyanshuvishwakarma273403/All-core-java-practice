@@ -10,7 +10,7 @@ public class PreGreaterElement {
         ArrayList<Integer> ans = new ArrayList<>();
         Stack<Integer> st = new Stack<>();
         for(int i = 0; i < n; i++){
-            while(!st.isEmpty() && arr[i] > st.peek()){
+            while(!st.isEmpty() && arr[i] >= st.peek()){
                 st.pop();
             }
             if(st.isEmpty()){
