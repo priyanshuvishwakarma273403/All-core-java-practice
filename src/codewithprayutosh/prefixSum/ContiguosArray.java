@@ -8,24 +8,29 @@ public class ContiguosArray {
         System.out.println(findMaxLength(arr));
     }
 
-    public static int findMaxLength(int[] arr) {
+    public static int findMaxLength(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
+
         map.put(0, -1);
+
         int sum = 0;
         int ans = 0;
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i] == 0){
-                sum --;
-            }else{
+
+        for (int i = 0; i < nums.length; i++) {
+
+            if (nums[i] == 0)
+                sum--;
+            else
                 sum++;
-            }
-            if(map.containsKey(sum)){
-                ans = Math.max(ans, map.get(sum));
-            }
-            else{
+
+            if (map.containsKey(sum)) {
+                ans = Math.max(ans, i - map.get(sum));
+            } else {
                 map.put(sum, i);
             }
         }
+
         return ans;
+
     }
 }
